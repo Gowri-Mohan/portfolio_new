@@ -18,7 +18,7 @@ export const Hero: React.FC<HeroProps> = ({ name, profile, contact }) => {
           2. Change the `src` attribute below to `/profile.jpg`.
         */}
         <img
-          src="/photo.png"
+          src="photo.png"
           alt="Gowri Mohan"
           className="rounded-full w-40 h-40 md:w-48 md:h-48 object-cover border-4 border-cyan-400 shadow-lg"
         />
