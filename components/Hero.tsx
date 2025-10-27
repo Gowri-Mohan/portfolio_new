@@ -1,6 +1,5 @@
 import React from 'react';
 import type { Contact } from '../data/portfolioData';
-import profilePic from './photo.png'; // <-- ADDED THIS IMPORT
 
 interface HeroProps {
   name: string;
@@ -12,11 +11,8 @@ export const Hero: React.FC<HeroProps> = ({ name, profile, contact }) => {
   return (
     <section id="hero" className="flex flex-col md:flex-row items-center gap-12 py-16 md:py-24 border-b border-slate-800">
       <div className="flex-shrink-0">
-        {/*
-          The image is now imported, so we use the variable 'profilePic'
-        */}
         <img
-          src={profilePic} // <-- CHANGED THIS
+          src="/photo.png" // <-- This is the correct path
           alt="Gowri Mohan"
           className="rounded-full w-40 h-40 md:w-48 md:h-48 object-cover border-4 border-cyan-400 shadow-lg"
         />
