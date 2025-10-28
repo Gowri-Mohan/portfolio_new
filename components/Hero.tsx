@@ -12,7 +12,7 @@ export const Hero: React.FC<HeroProps> = ({ name, profile, contact }) => {
     <section id="hero" className="flex flex-col md:flex-row items-center gap-12 py-16 md:py-24 border-b border-slate-800">
       <div className="flex-shrink-0">
         <img
-          src="/photo.png" // <-- This is the correct path
+          src="photo.png" // <-- This is the correct path
           alt="Gowri Mohan"
           className="rounded-full w-40 h-40 md:w-48 md:h-48 object-cover border-4 border-cyan-400 shadow-lg"
         />
