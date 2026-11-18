@@ -27,6 +27,7 @@ export interface Experience {
   date: string;
   location: string;
   description: string;
+  points?: string[];
 }
 
 export interface Education {
@@ -138,7 +139,17 @@ export const portfolioData: PortfolioData = {
       role: "Full Stack Intern",
       date: "03/2026 – 11/2026",
       location: "Bangalore, India",
-      description: "Under the guidance of a senior mentor, spearheaded the transition to an event-driven architecture by introducing ECL's first Pub/Sub model using AWS SNS, Redis, and Celery, establishing a scalable data pipeline that seamlessly synced real-time engineering data for multiple downstream tasks. Optimized system latency and maintainability by migrating hardcoded configuration prompts into a PostgreSQL database, successfully resolving complex caching bottlenecks and significantly enhancing runtime configuration flexibility. Beyond these initial foundational tasks, actively contributed to the end-to-end development of the internal Lending Management System, gaining deep, hands-on domain knowledge of fintech operations, credit workflows, and financial data structures. Collaborated daily in an Agile environment to deliver these milestones alongside ongoing core contributions—participating in daily scrums, sprint planning, writing clean code, running CI/CD pipelines, and maintaining strict code quality standards within Bitbucket while continuously upskilling and expanding technical capabilities."
+      description: "Worked across the backend and frontend of a fintech lending platform and its AI document-processing service, mainly in **Python**, **Django**, **React** and **AWS**. Some of the things I worked on:",
+      points: [
+        "Built ECL's first production **pub/sub** flow using **AWS SNS** and **change data capture**, establishing an **event-driven** pattern later reused for internal **Slack** notifications.",
+        "Built a scheduled **cron** sync that mirrors CRM data into **PostgreSQL**, with incremental sync state tracking and type-safe data handling.",
+        "Designed a versioned **LLM** prompt management system in **PostgreSQL** with **REST APIs** for non-technical users, using a shared **Redis** cache across workers.",
+        "Integrated **Intercom** into the **React** customer portal with backend-signed identity verification using **JWT** and **HMAC**.",
+        "Implemented product analytics with **Mixpanel**, instrumenting 75+ custom events alongside autocapture across the **React** frontend.",
+        "Built an e-signature flow with webhook-based status tracking and **S3** document storage, plus an email ingestion pipeline with **AWS SES**.",
+        "Built **Metabase** dashboards with **SQL** to measure the accuracy of AI document processing.",
+        "Set up a **Dockerized** local environment for the API test suite, and shipped features end to end in an **Agile** team with code reviews and **CI/CD** on **Bitbucket**."
+      ]
     },
     {
       company: "Experion Technologies",

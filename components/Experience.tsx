@@ -38,6 +38,16 @@ const highlightTechTerms = (text: string) => {
   });
 };
 
+// Text containing **markers** is highlighted explicitly; plain text falls back to the term list above.
+const renderRichText = (text: string) => {
+  if (!text.includes('**')) return highlightTechTerms(text);
+  return text.split(/\*\*(.+?)\*\*/g).map((part, index) =>
+    index % 2 === 1
+      ? <strong key={index} className="text-cyan-300 font-semibold">{part}</strong>
+      : part
+  );
+};
+
 export const Experience: React.FC<ExperienceProps> = ({ organizations }) => {
   return (
     <section id="experience" className="py-16 md:py-24 border-b border-slate-800">
@@ -53,8 +63,18 @@ export const Experience: React.FC<ExperienceProps> = ({ organizations }) => {
             </div>
             <p className="text-cyan-400 font-semibold mb-3">{exp.company}</p>
             <p className="text-slate-400 leading-relaxed text-sm md:text-base">
-              {highlightTechTerms(exp.description)}
+              {renderRichText(exp.description)}
             </p>
+            {exp.points && exp.points.length > 0 && (
+              <ul className="mt-3 space-y-2.5 text-slate-400 leading-relaxed text-sm md:text-base">
+                {exp.points.map((point, i) => (
+                  <li key={i} className="relative pl-5">
+                    <span aria-hidden="true" className="absolute left-0 top-[0.6em] w-1.5 h-1.5 rounded-full bg-cyan-400/70"></span>
+                    {renderRichText(point)}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         ))}
       </div>
