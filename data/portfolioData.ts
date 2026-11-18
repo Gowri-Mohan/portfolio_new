@@ -72,7 +72,7 @@ export interface PortfolioData {
 export const portfolioData: PortfolioData = {
   name: "Gowri Mohan",
   subtitle: "Full Stack Engineer",
-  profile: "Full stack engineer, strongest in Python, Django and AWS, with project experience in other stacks as well. Experienced in building APIs, event-driven systems and AI-powered applications. Curious problem-solver who picks up new tools quickly.",
+  profile: "Full stack engineer, strongest in Python, Django and AWS, with project experience in other stacks as well. Curious problem-solver who picks up new tools quickly.",
   contact: {
     email: "gowrimohankrishnan@gmail.com",
     phone: "+91 6282085183",
