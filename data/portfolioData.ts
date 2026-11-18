@@ -151,8 +151,8 @@ export const portfolioData: PortfolioData = {
   education: [
     {
       institution: "Amrita School of Engineering",
-      degree: "Electronics and Computer Engineering",
-      details: "CGPA: 7.68/10 (Expected 08/2026)"
+      degree: "Bachelor of Technology",
+      details: "Electronics and Computer Engineering (CGPA: 7.68/10 | 08/2026)"
     },
     {
       institution: "The School of The Good Shepherd",
