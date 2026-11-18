@@ -70,8 +70,8 @@ export interface PortfolioData {
 
 export const portfolioData: PortfolioData = {
   name: "Gowri Mohan",
-  subtitle: "Full Stack Engineer | Electronics & Computer Engineering Student",
-  profile: "Determined student with an interest in problem-solving and exploring technologies based on curiosity, seeking growth in a dynamic tech environment.",
+  subtitle: "Full Stack Engineer",
+  profile: "Full stack engineer, strongest in Python, Django and AWS, with project experience in React, TypeScript and Node.js. Experienced in building APIs, event-driven systems and AI-powered applications. Curious problem-solver who picks up new tools quickly.",
   contact: {
     email: "gowrimohankrishnan@gmail.com",
     phone: "+91 6282085183",
@@ -136,7 +136,7 @@ export const portfolioData: PortfolioData = {
     {
       company: "Efficient Capital Labs",
       role: "Full Stack Intern",
-      date: "03/2026 – Present",
+      date: "03/2026 – 11/2026",
       location: "Bangalore, India",
       description: "Under the guidance of a senior mentor, spearheaded the transition to an event-driven architecture by introducing ECL's first Pub/Sub model using AWS SNS, Redis, and Celery, establishing a scalable data pipeline that seamlessly synced real-time engineering data for multiple downstream tasks. Optimized system latency and maintainability by migrating hardcoded configuration prompts into a PostgreSQL database, successfully resolving complex caching bottlenecks and significantly enhancing runtime configuration flexibility. Beyond these initial foundational tasks, actively contributed to the end-to-end development of the internal Lending Management System, gaining deep, hands-on domain knowledge of fintech operations, credit workflows, and financial data structures. Collaborated daily in an Agile environment to deliver these milestones alongside ongoing core contributions—participating in daily scrums, sprint planning, writing clean code, running CI/CD pipelines, and maintaining strict code quality standards within Bitbucket while continuously upskilling and expanding technical capabilities."
     },
@@ -169,7 +169,7 @@ export const portfolioData: PortfolioData = {
     {
       role: "Volunteering: AI In Healthcare class for 10th grade students",
       organization: "SSR Project",
-      date: "Ongoing"
+      date: "09/2025"
     },
     {
       role: "Intern for Upcycle event",
